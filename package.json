@@ -1,0 +1,19 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "A small app to practice API REST and show some movies",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasNA-123/movie-app.git"
+  },
+  "author": "TomasNA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomasNA-123/movie-app/issues"
+  },
+  "homepage": "https://github.com/TomasNA-123/movie-app#readme"
+}
