@@ -1,0 +1,45 @@
+.movie-info_icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: var(--font-color);
+}
+.btn_icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: var(--gray-font-color);
+}
+
+.icon-search{
+    -webkit-mask: url('../imgs/icons/magnifying-glass-solid.svg');
+    mask: url('../imgs/icons/magnifying-glass-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-calendar{
+    -webkit-mask: url('../imgs/icons/calendar-days-solid.svg');
+    mask: url('../imgs/icons/calendar-days-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-clock{
+    -webkit-mask: url('../imgs/icons/clock-solid.svg');
+    mask: url('../imgs/icons/clock-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-star{
+    -webkit-mask: url('../imgs/icons/star-solid.svg');
+    mask: url('../imgs/icons/star-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
