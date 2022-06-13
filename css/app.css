@@ -5,6 +5,24 @@
 
     --action-color: #FFD300;
     --adventure-color: #E07800;
+    --animation-color: #ade8f4;
+    --comedy-color: #faa307;
+    --crime-color: #ba181b;
+    --documentary-color: #ffff3f;
+    /*--drama-color: #560bad;*/
+    --drama-color: #c8b6ff;
+    --famili-color: #ffb700;
+    --fantasy-color: #7209b7;
+    --history-color: #e8ac65;
+    --horror-color: #6a040f;
+    --music-color: #81b71a;
+    --mistery-color: #66c8c7;
+    --romance-color: #ff758f;
+    --sf-color: #480ca8;
+    --tv-color: #ced4da;
+    --thriller-coolor: #660708;
+    --war-color: #FBB741;
+    --western-color: #a18262;
 }
 
 html {
@@ -86,9 +104,11 @@ body {
     scrollbar-width: none;
 }
 .categories-pill{
-    padding: 5px 10px;
+    padding: 6px 11px;
     border-radius: 15px;
+    font-weight: bold;
     scroll-snap-align: center;
+    white-space: nowrap;
 }
 
 .section-title{
@@ -127,6 +147,7 @@ body {
 }
 .movie-info--categories-pill{
     width: fit-content;
+    margin-right: 5px;
     margin-bottom: 5px;
     display: inline-block;
     padding: 5px 10px;
@@ -186,13 +207,81 @@ body {
 }
 
 
-.action-bg{
+.pill-28-bg{
     color: var(--gray-font-color);
     background-color: var(--action-color);
 }
-.adventure-bg{
+.pill-12-bg{
     color: var(--gray-font-color);
     background-color: var(--adventure-color);
+}
+.pill-16-bg{
+    color: var(--gray-font-color);
+    background-color: var(--animation-color);
+}
+.pill-35-bg{
+    color: var(--gray-font-color);
+    background-color: var(--comedy-color);
+}
+.pill-80-bg{
+    color: var(--font-color);
+    background-color: var(--crime-color);
+}
+.pill-99-bg{
+    color: var(--gray-font-color);
+    background-color: var(--documentary-color);
+}
+.pill-18-bg{
+    color: var(--gray-font-color);
+    background-color: var(--drama-color);
+}
+.pill-10751-bg{
+    color: var(--gray-font-color);
+    background-color: var(--famili-color);
+}
+.pill-14-bg{
+    color: var(--font-color);
+    background-color: var(--fantasy-color);
+}
+.pill-36-bg{
+    color: var(--gray-font-color);
+    background-color: var(--history-color);
+}
+.pill-27-bg{
+    color: var(--font-color);
+    background-color: var(--horror-color);
+}
+.pill-10402-bg{
+    color: var(--font-color);
+    background-color: var(--music-color);
+}
+.pill-9648-bg{
+    color: var(--gray-font-color);
+    background-color: var(--mistery-color);
+}
+.pill-10749-bg{
+    color: var(--gray-font-color);
+    background-color: var(--romance-color);
+}
+.pill-878-bg{
+    color: var(--font-color);
+    background-color: var(--sf-color);
+}
+.pill-10770-bg{
+    color: var(--gray-font-color);
+    background-color: var(--tv-color);
+}
+.pill-53-bg{
+    color: var(--font-color);
+    background-color: var(--thriller-coolor);
+}
+.pill-10752-bg{
+    color: var(--gray-font-color);
+    background-color: var(--war-color);
+}
+.pill-37-bg{
+    color: var(--font-color);
+    background-color: var(--western-color);
 }
 
 
