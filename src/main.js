@@ -1,3 +1,13 @@
+const api = axios.create({
+    baseURL: "https://api.themoviedb.org/3",
+    headers: {
+        "Content-Type": "application/json;charset=utf-8",
+    },
+    params: {
+        "api_key": API_KEY,
+    },
+});
+
 function create_element(element, clas_list=""){
     const output = document.createElement(element);
     output.classList = clas_list;
@@ -5,15 +15,12 @@ function create_element(element, clas_list=""){
 }
 
 async function getTrendingMoviesPreview(){
-    const res = await fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=" + API_KEY);
-    const data = await res.json();
-
-    const res_categories = await fetch("https://api.themoviedb.org/3/genre/movie/list?api_key="+API_KEY);
-    const data_categories = await res_categories.json();
-    const categories = data_categories.genres;
+    const { data } = await api("trending/movie/day");
+    
+    const data_categories = await api("genre/movie/list");
+    const categories = data_categories.data.genres;
 
     const movies = data.results;
-    console.log(movies)
     const movies_grid = document.getElementById("movies-grid--popular");
     movies.forEach(movie => {
         const poster = create_element("img", "movie-container--poster");
@@ -49,10 +56,8 @@ async function getTrendingMoviesPreview(){
 }
 
 async function getCategoriesPreview(){
-    const res = await fetch("https://api.themoviedb.org/3/genre/movie/list?api_key="+API_KEY);
-    const data = await res.json();
-
-    const categories = data.genres;
+    const data_categories = await api("genre/movie/list");
+    const categories = data_categories.data.genres;
 
     const categories_container = document.getElementById("categories-container");
     categories.forEach(category => {
