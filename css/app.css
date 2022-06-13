@@ -118,7 +118,7 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
 }
-.movie-info--date, .movie-info--duraction, .movie-info--calification{
+.movie-info--date, .movie-info--duration, .movie-info--calification{
     margin: 2px 0;
     font-size: 1.4rem;
 }
