@@ -10,6 +10,12 @@
     display: inline-block;
     background-color: var(--gray-font-color);
 }
+.return_icon{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: var(--font-color);
+}
 
 .icon-search{
     -webkit-mask: url('../imgs/icons/magnifying-glass-solid.svg');
@@ -38,6 +44,22 @@
 .icon-star{
     -webkit-mask: url('../imgs/icons/star-solid.svg');
     mask: url('../imgs/icons/star-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-return{
+    -webkit-mask: url('../imgs/icons/chevron-left-solid.svg');
+    mask: url('../imgs/icons/chevron-left-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.icon-up{
+    -webkit-mask: url('../imgs/icons/angles-up-solid.svg');
+    mask: url('../imgs/icons/angles-up-solid.svg');
     -webkit-mask-position: center;
     mask-position: center;
     -webkit-mask-repeat: no-repeat;

@@ -44,11 +44,21 @@ body {
 .header-container, .categories-container, .main-container{
     margin: 0 20px;
 }
+.header-container{
+    padding-bottom: 25px;
+}
+
+.return_arrow_container{
+    width: 80%;
+    margin: 20px auto 15px;
+    text-align: left;
+    cursor: pointer;
+}
 
 .header-title, .header-subtitle{
     font-weight: bold;
 }
-.header-title{
+.header-title, .generic-title{
     margin-bottom: 10px;
     font-size: 4rem;
 }
@@ -85,7 +95,7 @@ body {
 
 .categories-container{
     height: 50px;
-    margin-top: 30px;
+    margin-top: 1px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -107,6 +117,7 @@ body {
     padding: 6px 11px;
     border-radius: 15px;
     font-weight: bold;
+    text-decoration: none;
     scroll-snap-align: center;
     white-space: nowrap;
 }
@@ -152,7 +163,11 @@ body {
     display: inline-block;
     padding: 5px 10px;
     font-size: 1rem;
+    font-weight: bold;
     border-radius: 15px;
+}
+.pill_moviePage{
+    font-size: 1.2rem;
 }
 
 
@@ -194,7 +209,25 @@ body {
     border-radius: 15px;
 }
 
+#movies-grid--categories, #movies-grid--trending{
+    margin-top: 20px;
+}
 
+
+
+#float_btn_up{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 25px;
+    border: 2px solid var(--gray-font-color);
+    background-color: #1a0c5a;
+}
+#float_btn_up span{
+    background-color: var(--font-color);
+}
 
 .footer{
     width: 100%;

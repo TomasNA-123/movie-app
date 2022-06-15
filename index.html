@@ -11,30 +11,32 @@
 </head>
 <body>
     <header id="header" class="header-container">
-        <h1 class="header-title">Bienvenido a <span>MoviesNA</span></h1>
-        <p class="header-subtitle">Aquí encontrarás información sobre tus películas y series favoritas.</p>
+        <div id="return_arrow_container" class="return_arrow_container">
+            <div id="return_arrow" class="return_arrow"><span class="return_icon icon-return"></span></div>
+        </div>
+        <div id="header-text-container" class="header-text-container">
+            <h1 class="header-title">Bienvenido a <span>MoviesNA</span></h1>
+            <p class="header-subtitle">Aquí encontrarás información sobre tus películas y series favoritas.</p>
+        </div>
+
+        <div id="header_generic_title_container" class="header_generic_title_container">
+            <h1 id="generic-title" class="generic-title header-title">Title</h1>
+        </div>
 
         <form id="searchForm" class="header-form">
             <div class="custom-container">
-                <input class="custom-input--search" type="text">
-                <button class="custom-butn--search"><span class="btn_icon icon-search"></span></button>
+                <input id="custom-input--search" class="custom-input--search" placeholder="Search" type="text">
+                <button id="custom-butn--search" class="custom-butn--search" type="button"><span class="btn_icon icon-search"></span></button>
             </div>
         </form>
     </header>
     
     <section id="categories-container" class="categories-container">
-        <!-- <div class="categories-pill action-bg">Accion</div>
-        <div class="categories-pill adventure-bg">Aventura</div>
-        <div class="categories-pill action-bg">Accion</div>
-        <div class="categories-pill adventure-bg">Aventura</div>
-        <div class="categories-pill action-bg">Accion</div>
-        <div class="categories-pill adventure-bg">Aventura</div>
-        <div class="categories-pill action-bg">Accion</div>
-        <div class="categories-pill adventure-bg">Aventura</div> -->
+        <!-- <div class="categories-pill action-bg">Accion</div>-->
     </section>
 
     <main class="main-container">
-        <section class="main-section-index ">
+        <section id="main-section-index" class="main-section-index ">
             <h2 class="section-title">Populares</h2>
             <div id="movies-grid--popular" class="movies-grid">
                 <!--article class="movie-container">
@@ -49,69 +51,61 @@
                             <div class="movie-info--categories-pill adventure-bg">Aventura</div>
                         </div>
                     </div>
-                </!--article>
-
-                <article class="movie-container">
-                    <img src="./imgs/dr_strange.jpg" alt="movie poster" class="movie-container--poster">
-                    <div class="movie-container--movie-info">
-                        <p class="movie-info--title">Doctor Strange (Doctor Extraño)</p>
-                        <p class="movie-info--date"><span class="movie-info_icon icon-calendar"></span>&nbsp; 12/12/2021</p>
-                        <p class="movie-info--duraction"><span class="movie-info_icon icon-clock"></span>&nbsp; 1.30h</p>
-                        <p class="movie-info--calification"><span class="movie-info_icon icon-star"></span>&nbsp; 80%</p>
-                        <div class="movie-info--categories-container">
-                            <div class="movie-info--categories-pill action-bg">Accion</div>
-                            <div class="movie-info--categories-pill adventure-bg">Aventura</div>
-                            <div class="movie-info--categories-pill action-bg">Accion</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article-- class="movie-container">
-                    <img src="./imgs/dr_strange.jpg" alt="movie poster" class="movie-container--poster">
-                    <div class="movie-container--movie-info">
-                        <p class="movie-info--title">Doctor Strange (Doctor Extraño)</p>
-                        <p class="movie-info--date"><span class="movie-info_icon icon-calendar"></span>&nbsp; 12/12/2021</p>
-                        <p class="movie-info--duraction"><span class="movie-info_icon icon-clock"></span>&nbsp; 1.30h</p>
-                        <p class="movie-info--calification"><span class="movie-info_icon icon-star"></span>&nbsp; 80%</p>
-                        <div class="movie-info--categories-container">
-                            <div class="movie-info--categories-pill action-bg">Accion</div>
-                            <div class="movie-info--categories-pill adventure-bg">Aventura</div>
-                            <div class="movie-info--categories-pill action-bg">Accion</div>
-                        </div>
-                    </div>
-                </article-->
+                </article>-->
             </div>
         </section>
 
-        <section class="main-section-movie-data d-none">
-            <img class="movie-image" src="./imgs/dr_strange.jpg" alt="movie poster">
+        <section id="main-section-movie-data" class="main-section-movie-data">
+            <img id="movie-data-image" class="movie-image" src="./imgs/dr_strange.jpg" alt="movie poster">
             <article class="movie-data">
-                <h2 class="movie-data--title">Doctor Strange (Doctor Extraño)</h2>
-                <p class="movie-data--date"><span class="movie-info_icon icon-calendar"></span>&nbsp; 12/12/2021</p>
-                <p class="movie-data--duraction"><span class="movie-info_icon icon-clock"></span>&nbsp; 1.30h</p>
-                <p class="movie-data--calification"><span class="movie-info_icon icon-star"></span>&nbsp; 80%</p>
+                <h2 id="movie-data--title" class="movie-data--title">Title</h2>
+                <p id="movie-data--date" class="movie-data--date"><span class="movie-info_icon icon-calendar"></span>&nbsp; date</p>
+                <!--p id="movie-data--duraction" class="movie-data--duraction"><span class="movie-info_icon icon-clock"></span>&nbsp; 1.30h</p-->
+                <p id="movie-data--calification" class="movie-data--calification"><span class="movie-info_icon icon-star"></span>&nbsp; Vote</p>
                 <div class="movie-data--description">
                     <h3 class="description--title">Descripción</h3>
-                    <p class="description--content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi nobis suscipit recusandae ullam alias sit vitae rem quasi unde accusamus blanditiis quia quas molestiae atque, illo consequuntur ab praesentium consectetur.
+                    <p id="description--content" class="description--content">
+                        description
                     </p>
                 </div>
                 <div class="movie-data--categories">
                     <h3 class="categories--title">Categorías</h3>
-                    <div class="movie-data--categories">
-                        <div class="movie-data--categories-pill action-bg">Accion</div>
+                    <div id="movie-data--categories" class="movie-data--categories">
+                        <!-- <div class="movie-data--categories-pill action-bg">Accion</div>
                         <div class="movie-data--categories-pill adventure-bg">Aventura</div>
-                        <div class="movie-data--categories-pill action-bg">Accion</div>
+                        <div class="movie-data--categories-pill action-bg">Accion</div> -->
                     </div>
                 </div>
             </article>
         </section>
+
+        <section id="main-section-categorie-movies">
+            <div id="movies-grid--categories" class="movies-grid">
+                
+            </div>
+        </section>
+
+        <section id="main-section-search">
+            <div id="movies-grid--search" class="movies-grid">
+                
+            </div>
+        </section>
+
+        <section id="main-section-trending">
+            <div id="movies-grid--trending" class="movies-grid">
+                
+            </div>
+        </section>
+
+        <button id="float_btn_up" class="float_btn_up" onclick="window.scrollTo(0, 0);"><span class="btn_icon icon-up"></span></button>
     </main>
 
     <footer id="footer" class="footer">Hecho por TomasNA</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/secrets.js"></script>
+    <script src="./src/nodes.js"></script>
     <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
 </body>
 </html>
