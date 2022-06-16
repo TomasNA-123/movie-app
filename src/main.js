@@ -102,6 +102,8 @@ async function getMovieById(movie_id){
     genre_ids = movie.genres.map( item => item.id );
     cardCategoriesContiner.innerHTML = "";
     cardCategoriesContiner.appendChild(createCategoriesInCards(genre_ids, categories, "pill_moviePage"));
+
+    getRelatedMoviesById(movie_id, categories);
 }
 
 
@@ -149,6 +151,14 @@ function createCategoriesInCards(genres, categories, pillClass){
     });
     return categories_container;
 }
+
+async function getRelatedMoviesById(id, categories){
+    const { data } = await api("movie/"+id+"/similar");
+
+    const relatedMovies = data.results;
+    createMoviesCards(relatedMovies, categories, grid_related)
+}
+
 
 
 getCategoriesPreview()

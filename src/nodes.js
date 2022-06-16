@@ -10,6 +10,7 @@ const section_index = document.getElementById("main-section-index");
 const movies_grid = document.getElementById("movies-grid--popular");
 
 const section_movie_data = document.getElementById("main-section-movie-data");
+const grid_related = document.getElementById("movies-grid--related");
 
 const return_arrow_container = document.getElementById("return_arrow_container");
 const return_arrow = document.getElementById("return_arrow");
