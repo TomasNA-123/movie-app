@@ -31,14 +31,17 @@
         </form>
     </header>
     
-    <section id="categories-container" class="categories-container">
+    <section id="categories-container" class="categories-container custom-scrollbar">
         <!-- <div class="categories-pill action-bg">Accion</div>-->
     </section>
 
     <main class="main-container">
         <section id="main-section-index" class="main-section-index ">
-            <h2 class="section-title">Populares</h2>
-            <div id="movies-grid--popular" class="movies-grid">
+            <div class="title-show-more">
+                <h2 class="section-title">Populares</h2>
+                <button id="btn-show-more_trends" class="btn-show-more" onclick="location.hash = 'trends';"><span class="btn_icon icon-eye"></span> Ver Mas</button>
+            </div>
+            <div id="movies-grid--popular" class="movies-list custom-scrollbar">
                 <!--article class="movie-container">
                     <img src="./imgs/dr_strange.jpg" alt="movie poster" class="movie-container--poster">
                     <div class="movie-container--movie-info">
@@ -56,30 +59,32 @@
         </section>
 
         <section id="main-section-movie-data" class="main-section-movie-data">
-            <img id="movie-data-image" class="movie-image" src="./imgs/dr_strange.jpg" alt="movie poster">
-            <article class="movie-data">
-                <h2 id="movie-data--title" class="movie-data--title">Title</h2>
-                <p id="movie-data--date" class="movie-data--date"><span class="movie-info_icon icon-calendar"></span>&nbsp; date</p>
-                <!--p id="movie-data--duraction" class="movie-data--duraction"><span class="movie-info_icon icon-clock"></span>&nbsp; 1.30h</p-->
-                <p id="movie-data--calification" class="movie-data--calification"><span class="movie-info_icon icon-star"></span>&nbsp; Vote</p>
-                <div class="movie-data--description">
-                    <h3 class="description--title">Descripción</h3>
-                    <p id="description--content" class="description--content">
-                        description
-                    </p>
-                </div>
-                <div class="movie-data--categories">
-                    <h3 class="categories--title">Categorías</h3>
-                    <div id="movie-data--categories" class="movie-data--categories">
-                        <!-- <div class="movie-data--categories-pill action-bg">Accion</div>
-                        <div class="movie-data--categories-pill adventure-bg">Aventura</div>
-                        <div class="movie-data--categories-pill action-bg">Accion</div> -->
+            <div class="movie-data--general-container">
+                <img id="movie-data-image" class="movie-image" src="#" alt="movie poster">
+                <article class="movie-data">
+                    <h2 id="movie-data--title" class="movie-data--title">Title</h2>
+                    <p id="movie-data--date" class="movie-data--date"><span class="movie-info_icon icon-calendar"></span>&nbsp; date</p>
+                    <!--p id="movie-data--duraction" class="movie-data--duraction"><span class="movie-info_icon icon-clock"></span>&nbsp; 1.30h</p-->
+                    <p id="movie-data--calification" class="movie-data--calification"><span class="movie-info_icon icon-star"></span>&nbsp; Vote</p>
+                    <div class="movie-data--description">
+                        <h3 class="description--title">Descripción</h3>
+                        <p id="description--content" class="description--content">
+                            description
+                        </p>
                     </div>
-                </div>
-            </article>
+                    <div class="movie-data--categories">
+                        <h3 class="categories--title">Categorías</h3>
+                        <div id="movie-data--categories" class="movie-data--categories">
+                            <!-- <div class="movie-data--categories-pill action-bg">Accion</div>
+                            <div class="movie-data--categories-pill adventure-bg">Aventura</div>
+                            <div class="movie-data--categories-pill action-bg">Accion</div> -->
+                        </div>
+                    </div>
+                </article>
+            </div>
             <div class="movie-data--related">
                 <h3 class="related--title">Recomendaciónes</h3>
-                <div id="movies-grid--related" class="movies-grid">
+                <div id="movies-grid--related" class="movies-list custom-scrollbar">
                     
                 </div>
             </div>

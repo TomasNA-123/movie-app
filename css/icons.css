@@ -65,3 +65,11 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
+.icon-eye{
+    -webkit-mask: url('../imgs/icons/eye-solid.svg');
+    mask: url('../imgs/icons/eye-solid.svg');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
